@@ -1,0 +1,171 @@
+.patrimoi-gradient-text {
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.patrimoi-blue-glow {
+  box-shadow: 0 0 40px rgba(0, 122, 255, 0.15), 0 0 80px rgba(0, 122, 255, 0.05);
+}
+
+.patrimoi-hero-bg {
+  background: #ffffff;
+}
+
+.patrimoi-section-bg {
+  background: #ffffff;
+}
+
+.patrimoi-phone-mockup {
+  background: #0f172a;
+  border-radius: 2.5rem;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.patrimoi-qr-pulse {
+  animation: qrPulse 2s ease-in-out infinite;
+}
+
+@keyframes qrPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.patrimoi-float {
+  animation: floatUp 6s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.comparison-patrimoi-col {
+  background: linear-gradient(180deg, rgba(0, 122, 255, 0.05) 0%, rgba(0, 122, 255, 0.02) 100%);
+}
+
+/* ===== PRODUCTION MESH GRADIENTS ===== */
+/* Organic pastel shapes: Light Blue #E0F2FE + Mint Green #F0FDF4, 40% opacity, 150px blur */
+
+.patrimoi-mesh-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.patrimoi-mesh-bg::before {
+  content: '';
+  position: absolute;
+  inset: -100px;
+  background:
+    radial-gradient(ellipse 700px 550px at 10% 40%, rgba(224, 242, 254, 0.40) 0%, transparent 70%),
+    radial-gradient(ellipse 600px 500px at 85% 30%, rgba(240, 253, 244, 0.40) 0%, transparent 70%),
+    radial-gradient(ellipse 500px 450px at 50% 85%, rgba(224, 242, 254, 0.30) 0%, transparent 70%);
+  filter: blur(150px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.patrimoi-mesh-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.patrimoi-mesh-hero::before {
+  content: '';
+  position: absolute;
+  inset: -120px;
+  background:
+    radial-gradient(ellipse 800px 650px at 25% 20%, rgba(224, 242, 254, 0.40) 0%, transparent 65%),
+    radial-gradient(ellipse 700px 550px at 70% 75%, rgba(240, 253, 244, 0.40) 0%, transparent 65%),
+    radial-gradient(ellipse 550px 400px at 55% 10%, rgba(224, 242, 254, 0.25) 0%, transparent 70%);
+  filter: blur(150px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===== GLASS CARD SYSTEM (16px blur, rgba(255,255,255,0.4) border) ===== */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.crystal-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.03),
+    0 1px 2px rgba(0, 0, 0, 0.02),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.crystal-card-strong {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.04),
+    0 2px 4px rgba(0, 0, 0, 0.02),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* ===== PDF MOCKUP ===== */
+.pdf-mockup {
+  background: #ffffff;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+.pdf-stamp {
+  border: 3px solid #34C759;
+  color: #34C759;
+  transform: rotate(-12deg);
+}
+
+/* ===== ROI CALCULATOR ===== */
+.roi-value {
+  background: linear-gradient(135deg, #007AFF 0%, #00C6FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.roi-card-glow {
+  box-shadow:
+    0 0 60px rgba(0, 122, 255, 0.08),
+    0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== CHAOS COMPARISON ===== */
+.chaos-card-red {
+  border-left: 3px solid #FF3B30;
+}
+
+.chaos-card-green {
+  border-left: 3px solid #34C759;
+}
+
+/* ===== TESTIMONIAL CARDS ===== */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+}
+
+/* ===== SLIDER CUSTOM ===== */
+.patrimoi-slider [data-orientation="horizontal"] {
+  height: 6px;
+}
